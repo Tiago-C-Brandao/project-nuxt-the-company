@@ -3,18 +3,23 @@ export default {
   head: {
     title: 'project-nuxt',
     htmlAttrs: {
-      lang: 'en'
+      lang: 'pt-br '
     },
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-      { hid: 'description', name: 'description', content: '' },
+      { hid: 'description', name: 'description', content: 'Minha descrição' },
       { name: 'format-detection', content: 'telephone=no' }
     ],
     link: [
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
     ]
   },
+
+  //router: {
+    //middleware: 'auth'
+    //middleware: ['auth', 'middle...'] <- Para mais de um meddleware se utiliza um array com os nomes dos diddleware
+  //},
 
   // Global CSS: https://go.nuxtjs.dev/config-css
   css: [

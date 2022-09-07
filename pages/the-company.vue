@@ -8,6 +8,11 @@
 <script>
 export default {
 
+  middleware: 'auth'
+  // middleware() {
+  //     console.log("middleware The Company")
+  //   }
+
 }
 </script>
 
