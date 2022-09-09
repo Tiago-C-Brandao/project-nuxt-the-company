@@ -1,4 +1,6 @@
 export default {
+
+  target: 'static',
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
     title: 'project-nuxt',
@@ -16,6 +18,14 @@ export default {
     ]
   },
 
+  publicRuntimeConfig: {
+    youtube_api_key: process.env.YOUTUBE_API_KEY
+  },
+
+  privateRuntimeConfig: {
+    facebook_api_key: process.env.FACEBOOK_API_KEY
+  },
+
   //router: {
     //middleware: 'auth'
     //middleware: ['auth', 'middle...'] <- Para mais de um meddleware se utiliza um array com os nomes dos diddleware
@@ -27,6 +37,10 @@ export default {
 
   // Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins
   plugins: [
+    '@/plugins/my-plugin',
+    '@/plugins/dayjs',
+    '@/plugins/vtooltip',
+    '@/plugins/axios'
   ],
 
   // Auto import components: https://go.nuxtjs.dev/config-components

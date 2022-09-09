@@ -46,7 +46,7 @@ export default {
 
   async fetch() {
     this.services = await this.$axios.$get(
-      "https://jsonplaceholder.typicode.com/photos?_limit=3"
+      "photos?_limit=3"
     );
   },
 
